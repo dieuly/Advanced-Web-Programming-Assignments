@@ -1,0 +1,18 @@
+{{ "jquery.js" | asset_url | script_tag }}
+{{ "/assets/js/foundation.js" | asset_url | script_tag }}
+{{ "//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.min.js" | script_tag }}
+<script>
+// TODO: Set up Range Slider's on_change to resize the image. See 'Callback Function' here: http://foundation.zurb.com/docs/components/range_slider.html
+$(document).foundation({
+  slider: {
+    on_change: function(){
+     var slider = $('#slider').attr('data-slider');
+     console.log(slider);
+     $('#bar').width(slider+'%');
+     }
+    }
+
+});
+
+// TODO: If you want to use Slick in the orbit page, set it up here. More info: http://kenwheeler.github.io/slick/
+</script>

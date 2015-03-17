@@ -1,0 +1,27 @@
+{% block content %}
+
+
+<!-- TODO: Make the other templates(Orbit, Gallery and Slider) in similar manner as this file. -->
+
+<div class="row">
+	<div class="medium-12 columns">
+		{{ "front.jpg" | asset_url | image_tag }}
+	</div>
+</div>
+
+<div class="row">
+	<div class="medium-8 columns">
+		<h1>Heading</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum odio ac leo mollis eleifend. Vestibulum vitae pellentesque quam, a egestas tortor. Aenean facilisis luctus ornare. Aenean malesuada dapibus sapien, et feugiat ipsum sollicitudin a. Etiam sed tristique nisl, id dignissim sem. Donec eleifend lectus nec sapien efficitur, a pulvinar metus finibus. Vivamus sed leo non nibh congue accumsan ac non lacus. Vivamus feugiat sollicitudin purus in egestas. Fusce placerat pharetra tincidunt. Maecenas efficitur metus vitae leo imperdiet mollis. Nulla facilisi. Pellentesque eget orci sed mi maximus fermentum. Donec id quam ac enim lobortis pellentesque. Vivamus sed pretium nulla.
+		</p>
+	</div>
+	<div class="medium-4 columns">
+		<div class="panel">
+		<h3>Slide Heading</h3>
+		<p>Praesent ac arcu placerat, finibus purus eu, rutrum ex. Nulla non tempor orci, fringilla molestie ipsum. Donec dapibus orci odio, ac venenatis odio volutpat vitae. Donec blandit massa eget magna aliquam, malesuada blandit lacus iaculis. Vivamus nec odio non elit elementum mollis non id mauris. Praesent luctus, mauris ac euismod congue, justo dui cursus libero, commodo facilisis sapien turpis eget magna. Etiam mollis a turpis at tempor. Nulla at quam vel nulla lobortis ornare. Aliquam et nisl nunc. Sed lectus ex, accumsan vel ligula at, vestibulum scelerisque arcu. Nullam at tortor non erat blandit ultricies. Duis finibus nisl mi, at congue sem luctus ac. Aliquam et neque a eros pellentesque ultricies vel quis tellus. Donec a sapien nisi.
+		</p>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
